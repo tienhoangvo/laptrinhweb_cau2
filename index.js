@@ -46,7 +46,7 @@ io.on("connection", (socket) => {
 
     const user = { _id: userId, fullname };
 
-    // Truyền sự kiện đến tất cả trình duyệt truy cập trang chủ
+    // Truyền sự kiện đến tất cả trình duyệt truy cập trang
     io.emit("add user", user);
   });
 
